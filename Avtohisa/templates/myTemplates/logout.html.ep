@@ -1,0 +1,7 @@
+%layout 'prime';
+%title 'Odjava';
+
+<center>
+<h6> Uspesno ste se odjavili</h6>
+</center>
+

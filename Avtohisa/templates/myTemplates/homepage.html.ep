@@ -1,0 +1,7 @@
+%layout 'prime';
+%title 'Domaca stran';
+
+<a href="/logout">Odjava</a>
+ <h1> </h1>
+      <p>Moja prva stran</p>
+

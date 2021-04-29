@@ -1,0 +1,24 @@
+%layout 'prime';
+%title 'Stran za prijavo';
+
+<center>
+<h1> Za uporabo spletne strani se je potrebno prijaviti </h1>
+
+<h6>
+<font color = red>
+<% if($napaka) { %>
+<%= $napaka %>
+<% } %>
+</font>
+</h6>
+
+<form action ="/login" method="post">
+
+<b>UserName</b> <input type = "text" name = "username" required></br>
+<b>Password</b> <input type = "password" name = "password" required></br>
+
+<input type = "submit" value = "submit">
+<input type = "reset" value = "reset">
+
+</form>
+</center>
