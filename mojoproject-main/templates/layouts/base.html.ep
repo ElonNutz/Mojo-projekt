@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<title><%= title %></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  
+    <a class="navbar-brand" href="<%= url_for 'main_home' %>">Home</a>
+	 <a class="navbar-brand" href="<%= url_for 'main_dealerships' %>">Dealerships</a>   
+	 <a class="navbar-brand" href="<%= url_for 'main_cars' %>">Cars</a>
+    <div float="right">
+</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+      <li class="nav-item">
+   
+      </li>       
+  </div>
+</nav>
+<div align="right">
+     % if ($self->session('username') ne "" || $self->session('username')) {
+    Logged in as: <a class = "navbar-brand" href="<%= url_for 'main_profile' %>"><%= $self->session('username') %></a>
+    <a class = "navbar-brand"  href="<%= url_for 'auths_delete' %>">Logout</a>
+  % } else {
+    <a class = "navbar-brand"  href="<%= url_for 'auths_create' %>">Login</a>
+    <a class = "navbar-brand"  href="<%= url_for 'users_create' %>">Signup</a>
+  % }
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin:25px" >
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <%= content %>
+    </div>
+
+
+
+  <footer id="myFooter">
+
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4></h4>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

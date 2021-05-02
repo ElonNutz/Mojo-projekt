@@ -1,0 +1,44 @@
+% layout 'base';
+<title></title>
+
+    <div align = "center">
+        <h3>Avtohiša Marjan</h3>
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-dodge-challenger-srt-hellcat-109-1593640224.jpg?crop=0.809xw:0.683xh;0.115xw,0.262xh&resize=2048:*" alt="Flowers" style="width:50%;">
+        <p></p>
+    </div>
+
+    <body>
+        <div align = "left">
+            <h3>Nekaj besed o nas.</h3>
+            <div>
+                <p>
+                    Smo avtohiša s kar 5 zvezdicami, ki pričajo o našem kvalitetnem delu skozi vsa leta obstoja!
+
+                    V naravnem okolju, v prelepi naravi, na deželi kočevske in ribniške vam na področju ponudbe novih in rabljenih vozil ter servisa želimo ponuditi nekaj več. Naše dolgoletne izkušnje in strokovnost nam omogočajo veliko širino našega dela. Za vas vedno najdemo optimalno ponudbo. Naša obravnava je v prvi vrsti individualna.
+                </p>
+            </div>
+            <h3>Nova vozila</h3>
+            <div>
+                <p>
+                    V naši regiji smo eden vodilnih trgovcev za nova vozila. S ponosom zastopamo visokotehnološko znamko vozil Hyundai. Ponudba novih vozil različnih pogonov je izredna. Poleg znamke Hyudai smo specialisti za vozila Opel več kar četrtino stoletja. Servisiramo pa tudi ostala vozila priznanih znamk in pa lahka dostavna vozila ter avtodome, kamperje.
+                </p>
+            </div>
+            <h3>Lokacija</h3>
+            <div>
+                <p>
+                    Tukaj smo za vas v Malih Laščah v prijetnem okolju. Naš prodajno-servisni center družinskega podjetja se razprostira v dveh etažah s sprejemna pisarno v sosednjem objektu. Na naši lokaciji nikoli ne boste imeli težav s parkiranjem, saj razpolagamo s 4.000 kvadratnimi površinami parkirnih mest. V vse naše prostore imajo možnost dostopa invalidi.
+
+            </div>
+            <h3>Zanimivosti</h3>
+            <div>
+                <p>
+                    V našo hišo vabimo vse tiste, ki jih pritegnejo novosti s področja vozil in ob aktualnih akcijah in raznih finančnih rešitvah, verjamemo, da so le ta dosegljiva vsakomur. Za tiste, ki iščete rabljeno vozilo po konkurenčni ceni, strokovno tehnično pregledana v 40 točkah in z garancijo ste našli pravi naslov. Obsežna zaloga odličnih vozil je vedno na voljo, tako da boste z lahkoto našli ravno takšno vozilo, ki je primerno za Vas
+                </p>
+                <p>
+                    Naš prodajno-servisni center se pohvali s popolno storitvijo na prodajnem, kot tudi na poprodajnem področju. S tem dokazujemo, da vam »vse na enem mestu« prihrani prenekatero uro. In ker je čas denar, nam do danes zaupa že lepo število naših stalnih obiskovalcev. Tisti, ki se vozijo v naših vozilih, kot tudi tisti, ki jih je naša servisna storitev prepričala o strokovnosti, ažurnosti in prilagodljivosti.
+                </p>
+            </div>
+        </div>
+
+
+    </body>

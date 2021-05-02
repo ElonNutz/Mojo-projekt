@@ -1,0 +1,35 @@
+% layout 'base';
+
+	    <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+		<th>dealership</th>
+          <th>Brand</th>
+          <th>Fuel</th>
+		   <th>Karoserija</th>
+          <th>Price</th>
+          <th>Year</th>
+          <th>Mileage</th>
+         
+          <th>Added on</th>
+
+        </tr>
+      </thead>
+      <tbody>
+      
+        
+% for my $row(myproject::Model->db->query('SELECT dealership_id,brand_id,fuel_id,name,kilometers,year,price,created_on FROM cars')->arrays) {
+    <div>
+
+       <td> <%= myproject::Model->db->query('SELECT name FROM dealerships WHERE dealership_id=\''.$row->[0].'\'')->hash->{name} %></td>
+        <td><%= myproject::Model->db->query('SELECT name FROM brands WHERE brand_id=\''.$row->[1].'\'')->hash->{name} %></td>
+       <td> <%= myproject::Model->db->query('SELECT name FROM fuels WHERE fuel_id=\''.$row->[2].'\'')->hash->{name} %></td>
+       <td> <%= $row->[3] %></td>
+        <td><%= $row->[4] %></td>
+        <td><%= $row->[5] %></td>
+        <td><%= $row->[6] %></td>
+        <td><%= $row->[7] %></td>
+         </tr>
+    </div>
+% }

@@ -1,0 +1,3 @@
+% layout 'base';
+
+<%= $self->param('car') %>

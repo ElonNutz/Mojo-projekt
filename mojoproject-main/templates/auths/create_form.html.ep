@@ -1,0 +1,44 @@
+% layout 'base';
+
+<form method='POST' action='<%= url_for "auths_create" %>'>
+
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Welcome back!</h1>
+  <p>Please sign in</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+
+      
+    </div>
+    <div class="col-sm-4">
+      <h3>Login</h3>  
+	  <p><form method="get" action="kaj.php">
+
+
+<input type='text' name='username' required placeholder="Username" /><br/><p></p> 
+<input type='password' name='password' required placeholder="Password" /><br/>
+<p></p> 
+
+<p></p> <p></p> 
+     
+	  <p></p> <p></p> 
+	   <input type="submit" value="Login"/>
+
+
+</form></p>
+    
+    </div>
+    <div class="col-sm-4">
+    
+
+     
+    </div>
+  </div>
+</div>
+
+</body>

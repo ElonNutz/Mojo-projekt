@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="UTF-8">
+</head>
+
+<body class="">
+  <a href="<%= url_for 'main_home' %>">Home</a>
+  <a href="<%= url_for 'main_dealerships' %>">Dealerships</a>
+  <a href="<%= url_for 'main_cars' %>">Cars</a>
+  
+  
+  % if ($self->session('username') ne "" || $self->session('username')) {
+    Logged in as: <a href="<%= url_for 'main_profile' %>"><%= $self->session('username') %></a>
+    <a href="<%= url_for 'auths_delete' %>">Logout</a>
+  % } else {
+    <a href="<%= url_for 'auths_create' %>">Login</a>
+    <a href="<%= url_for 'users_create' %>">Signup</a>
+  % }
+  <%= content %>
+</body>
+</html>

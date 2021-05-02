@@ -1,0 +1,11 @@
+% layout 'base';
+<br>
+THIS IS BROWSE PAGE 
+
+<br>
+<%= $self%>
+% for my $row(myproject::Model->db->query('SELECT * FROM dealerships')->arrays) {
+    <div>
+        <%= $row->[1] %>
+    </div>
+% }

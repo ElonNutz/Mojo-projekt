@@ -1,0 +1,22 @@
+% layout 'base';
+	    <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+		<th>Name</th>
+          <th>Description</th>
+          <th>Added on</th>
+		   
+        </tr>
+      </thead>
+      <tbody>
+      
+% for my $row(myproject::Model->db->query('SELECT name,address,created_on FROM dealerships')->arrays) {
+    <div>
+
+       <td> <%= $row->[0] %></td>
+      <td>  <%= $row->[1] %></td>
+       <td> <%= $row->[2] %></td>
+       </tr>
+    </div>
+% }

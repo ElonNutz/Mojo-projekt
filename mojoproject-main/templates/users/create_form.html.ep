@@ -1,0 +1,45 @@
+% layout 'base';
+
+<form method='POST' action="<%= url_for 'users_create' %>" >
+
+<div class="jumbotron text-center">
+  <h1>New to our dealership</h1>
+  <p>Please sign up</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+
+      
+    </div>
+    <div class="col-sm-4">
+      <h3>Sign up</h3>  
+	  <p><form method="get">
+
+    <input type='text' placeholder="Name" name='username' value="<%= flash 'username' %>" />
+    <p></p> 
+    <input type='password' placeholder="Password" name='password1'/>  
+    <p></p> 
+    <input type='password' placeholder="Confirm password" name='password2'/>
+    <p></p> 
+
+<p></p> 
+
+	   <input type="submit" value="Sign up" name="Register"/>
+       
+
+
+</form></p>
+    
+    </div>
+    <div class="col-sm-4">
+    
+
+     
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
